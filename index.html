@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    
+    <!-- Primary Meta Tags -->
+    <title>SunQuest - Navigate with the Sun | GPS-Free Navigation App</title>
+    <meta name="title" content="SunQuest - Navigate with the Sun | GPS-Free Navigation App">
+    <meta name="description" content="Navigate confidently without GPS using SunQuest's innovative sun-based navigation. Perfect for hiking, outdoor adventures, and emergency situations. Download now!">
+    <meta name="keywords" content="sun navigation, GPS-free navigation, outdoor navigation, hiking compass, solar position app, outdoor adventure app, survival navigation, natural navigation">
+    <meta name="author" content="CodeHospital">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sunquest.codehospital.com">
+    <meta property="og:title" content="SunQuest - Navigate with the Sun | GPS-Free Navigation App">
+    <meta property="og:description" content="Navigate confidently without GPS using SunQuest's innovative sun-based navigation. Perfect for hiking, outdoor adventures, and emergency situations.">
+    <meta property="og:image" content="https://sunquest.codehospital.com/assets/social-preview.webp">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sunquest.codehospital.com">
+    <meta property="twitter:title" content="SunQuest - Navigate with the Sun | GPS-Free Navigation App">
+    <meta property="twitter:description" content="Navigate confidently without GPS using SunQuest's innovative sun-based navigation. Perfect for hiking, outdoor adventures, and emergency situations.">
+    <meta property="twitter:image" content="https://sunquest.codehospital.com/assets/social-preview.webp">
+    
+    <!-- Favicon -->
+    <link rel="canonical" href="https://sunquest.codehospital.com">
+    <link rel="alternate" hreflang="x-default" href="https://sunquest.codehospital.com">
+    <link rel="alternate" hreflang="en" href="https://sunquest.codehospital.com">
+    
+    <!-- Mobile App Meta -->
+    <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
+    <meta name="google-play-app" content="app-id=com.codehospital.tarzaha">
+    <meta name="application-name" content="SunQuest">
+    <meta name="apple-mobile-web-app-title" content="SunQuest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>SunQuest - Navigate with the Sun</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/webp" href="assets/logo.webp">
+    <link rel="apple-touch-icon" href="assets/logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.webp" alt="SunQuest Logo" class="logo-img">
+                <span>SunQuest</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">☀️</button>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#download">Download</a>
+                <a href="#contact">Contact</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+            <script>
+                document.querySelector('.menu-toggle').addEventListener('click', function() {
+                    document.querySelector('.nav-links').classList.toggle('show');
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!e.target.closest('nav')) {
+                        document.querySelector('.nav-links').classList.remove('show');
+                    }
+                });
+
+                // Add active class to current section
+                const sections = document.querySelectorAll('section[id]');
+                window.addEventListener('scroll', () => {
+                    let current = '';
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        if (pageYOffset >= sectionTop - 60) {
+                            current = section.getAttribute('id');
+                        }
+                    });
+
+                    document.querySelectorAll('.nav-links a').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').includes(current)) {
+                            link.classList.add('active');
+                        }
+                    });
+                });
+            </script>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Find Your Way Using the Sun</h1>
+                <p>Discover SunQuest - an innovative navigation app that helps you find your direction using the sun's position, no GPS required. Perfect for outdoor adventures, survival situations, or when you want to connect with ancient navigation techniques.</p>
+                <div class="cta-buttons">
+                    <a href="#download" class="button primary">Download Now</a>
+                    <a href="#features" class="button secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/Screenshot_20250225_183116.png" alt="SunQuest App Screenshot showing sun-based navigation" class="phone-mockup">
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧭</div>
+                    <h3>GPS-Free Navigation</h3>
+                    <p>Navigate using just the sun's position - perfect when GPS isn't available.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☀️</div>
+                    <h3>Solar Position Tracking</h3>
+                    <p>Accurate direction finding based on solar position and time of day.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Works Anywhere</h3>
+                    <p>No internet or GPS signal needed - works anywhere under the sun.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Simple Interface</h3>
+                    <p>Easy-to-use interface that guides you in finding your direction.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="screenshots" class="screenshots">
+            <h2>See SunQuest in Action</h2>
+            <div class="screenshot-grid">
+                <div class="screenshot-item">
+                    <img src="assets/Screenshot_20250225_183116.png" alt="Main navigation screen showing compass and sun position" class="screenshot">
+                    <p>Intuitive Navigation Interface</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/Screenshot_20250225_183139.png" alt="Detailed view of direction finding" class="screenshot">
+                    <p>Precise Direction Finding</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/Screenshot_20250225_183300.png" alt="Settings and calibration screen" class="screenshot">
+                    <p>Easy Calibration</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download">
+            <h2>Get SunQuest Today</h2>
+            <p>Available for Android devices</p>
+            <div class="download-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.codehospital.tarzaha" class="store-button">
+                    <img src="assets/google-play-badge.png" alt="Get it on Google Play">
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <p>Have questions or feedback? We'd love to hear from you!</p>
+            <a href="mailto:sunquest@codehospital.com" class="button primary">Contact Us</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>SunQuest</h4>
+                <p>© 2025 CodeHospital. All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <a href="#features">Features</a>
+                <a href="#download">Download</a>
+                <a href="#contact">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
