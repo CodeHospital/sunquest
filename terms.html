@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!-- Primary Meta Tags -->
+    <title>Terms of Service | SunQuest - Sun-Powered Navigation & Alignment Reminders</title>
+    <meta name="title" content="Terms of Service | SunQuest - Sun-Powered Navigation & Alignment Reminders">
+    <meta name="description" content="The terms that apply when you use the SunQuest app, including service description, accuracy disclaimer, and third-party services.">
+    <meta name="keywords" content="SunQuest terms of service, terms and conditions, sun navigation app terms, user agreement">
+    <meta name="author" content="Code Hospital">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sunquest.codehospital.com/terms.html">
+    <meta property="og:title" content="Terms of Service | SunQuest - Sun-Powered Navigation & Alignment Reminders">
+    <meta property="og:description" content="The terms that apply when you use the SunQuest app, including service description, accuracy disclaimer, and third-party services.">
+
+    <link rel="canonical" href="https://sunquest.codehospital.com/terms.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/webp" href="assets/logo.webp">
+    <link rel="apple-touch-icon" href="assets/logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.webp" alt="SunQuest Logo" class="logo-img">
+                    <span>SunQuest</span>
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">☀️</button>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#download">Download</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html" class="active">Terms</a>
+            </div>
+            <script>
+                document.querySelector('.menu-toggle').addEventListener('click', function() {
+                    document.querySelector('.nav-links').classList.toggle('show');
+                });
+
+                document.addEventListener('click', function(e) {
+                    if (!e.target.closest('nav')) {
+                        document.querySelector('.nav-links').classList.remove('show');
+                    }
+                });
+            </script>
+        </nav>
+    </header>
+
+    <main class="privacy-content">
+        <section class="privacy-section">
+            <h1>Terms of Service</h1>
+            <p class="last-updated">Last Updated: July 18, 2026</p>
+
+            <div class="policy-content">
+                <section>
+                    <h2>About These Terms</h2>
+                    <p>These Terms apply to the Android app published on Google Play as <strong>A Solar Compass</strong> (package name <code>com.codehospital.tarzaha</code>), developed by <strong>Code Hospital</strong>. The app is also referred to as <strong>SunQuest</strong> on this website and in some app builds — both names refer to the same app and developer.</p>
+                </section>
+
+                <section>
+                    <h2>Introduction</h2>
+                    <p>These Terms of Service ("Terms") govern your use of the A Solar Compass / SunQuest mobile app ("the app"), provided by Code Hospital ("we", "us"). By downloading, installing, or using the app, you agree to these Terms. If you don't agree, please don't use the app.</p>
+                </section>
+
+                <section>
+                    <h2>Description of Service</h2>
+                    <p>SunQuest calculates the moment the sun's position aligns with the bearing between a starting location and a target location — any destination, landmark, or other location you choose — and reminds you beforehand with notifications and home-screen widgets. The app is provided as a convenience and informational tool for sun-powered, natural navigation.</p>
+                </section>
+
+                <section>
+                    <h2>Accuracy Disclaimer</h2>
+                    <p>SunQuest's calculations depend on the location data you provide (or your device's GPS), your device's clock and timezone settings, and astronomical approximations. While we aim for accuracy, we cannot guarantee that calculated times, directions, or timezones are error-free or suitable for every use.</p>
+                    <ul>
+                        <li>Do not rely on SunQuest as your sole source for time-critical or safety-critical determinations</li>
+                        <li>Independently verify important results, especially for navigation or other decisions where precision matters</li>
+                        <li>If a calculation looks wrong, please use the in-app "Report Wrong Calculation" feature to let us know</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Your Responsibilities</h2>
+                    <ul>
+                        <li>Provide reasonably accurate location information, or grant location permission if you want SunQuest to use GPS</li>
+                        <li>Keep your device's date, time, and timezone settings correct for accurate results</li>
+                        <li>Use the app for personal, non-commercial purposes</li>
+                        <li>Don't attempt to reverse engineer, disrupt, or abuse the app or the services it depends on</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Third-Party Services</h2>
+                    <p>SunQuest relies on third-party services to operate, including Google Play Services (location), Google AdMob (advertising), Sentry, and Google Firebase Crashlytics (crash diagnostics). Your use of the app is also subject to those providers' own terms. See our <a href="privacy.html">Privacy Policy</a> for details on what data is shared with them.</p>
+                </section>
+
+                <section>
+                    <h2>Intellectual Property</h2>
+                    <p>SunQuest, including its design, code, and content, is owned by Code Hospital and protected by applicable intellectual property laws. We grant you a limited, non-exclusive, non-transferable license to use the app for your personal, non-commercial use. All other rights are reserved.</p>
+                </section>
+
+                <section>
+                    <h2>Disclaimer of Warranties</h2>
+                    <p>SunQuest is provided "as is" and "as available," without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the app will be uninterrupted, error-free, or that calculation results will always be accurate.</p>
+                </section>
+
+                <section>
+                    <h2>Limitation of Liability</h2>
+                    <p>To the fullest extent permitted by applicable law, Code Hospital shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of, or inability to use, SunQuest — including missed alignments, notifications, or reliance on inaccurate results.</p>
+                </section>
+
+                <section>
+                    <h2>Changes to the App or Terms</h2>
+                    <p>We may update SunQuest or these Terms from time to time. If we make material changes, we'll update the "Last Updated" date above. Continued use of the app after changes take effect means you accept the updated Terms.</p>
+                </section>
+
+                <section>
+                    <h2>Termination</h2>
+                    <p>You may stop using SunQuest at any time by uninstalling the app. We may suspend or discontinue the app or any of its features at our discretion, with or without notice.</p>
+                </section>
+
+                <section>
+                    <h2>Governing Law</h2>
+                    <p>These Terms are governed by the applicable laws of your jurisdiction to the extent required by law, and any disputes will be handled in accordance with those laws.</p>
+                </section>
+
+                <section>
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions about these Terms, you can contact us:</p>
+                    <ul>
+                        <li>By email: <a href="mailto:sunquest@codehospital.com">sunquest@codehospital.com</a></li>
+                        <li>By visiting our website: <a href="https://sunquest.codehospital.com">sunquest.codehospital.com</a></li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>SunQuest</h4>
+                <p>© 2025–2026 Code Hospital. All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#download">Download</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

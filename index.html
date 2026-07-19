@@ -3,50 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
-    
+
     <!-- Primary Meta Tags -->
-    <title>SunQuest - Navigate with the Sun | GPS-Free Navigation App</title>
-    <meta name="title" content="SunQuest - Navigate with the Sun | GPS-Free Navigation App">
-    <meta name="description" content="Navigate confidently without GPS using SunQuest's innovative sun-based navigation. Perfect for hiking, outdoor adventures, and emergency situations. Download now!">
-    <meta name="keywords" content="sun navigation, GPS-free navigation, outdoor navigation, hiking compass, solar position app, outdoor adventure app, survival navigation, natural navigation">
-    <meta name="author" content="CodeHospital">
+    <title>SunQuest - Sun-Powered Navigation & Alignment Reminders</title>
+    <meta name="title" content="SunQuest - Sun-Powered Navigation & Alignment Reminders">
+    <meta name="description" content="SunQuest calculates the exact moment the sun aligns with any target direction you choose, then reminds you with notifications and live home-screen widgets. No compass or magnetometer required.">
+    <meta name="keywords" content="sun navigation, sun alignment app, solar compass, shadow navigation, natural navigation, direction finder, sun position app, home screen widget">
+    <meta name="author" content="Code Hospital">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sunquest.codehospital.com">
-    <meta property="og:title" content="SunQuest - Navigate with the Sun | GPS-Free Navigation App">
-    <meta property="og:description" content="Navigate confidently without GPS using SunQuest's innovative sun-based navigation. Perfect for hiking, outdoor adventures, and emergency situations.">
-    <meta property="og:image" content="https://sunquest.codehospital.com/assets/social-preview.webp">
-    
+    <meta property="og:title" content="SunQuest - Sun-Powered Navigation & Alignment Reminders">
+    <meta property="og:description" content="SunQuest calculates the exact moment the sun aligns with any target direction you choose, then reminds you with notifications and live home-screen widgets.">
+    <meta property="og:image" content="https://sunquest.codehospital.com/assets/Screenshot_20250225_183116.png">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sunquest.codehospital.com">
-    <meta property="twitter:title" content="SunQuest - Navigate with the Sun | GPS-Free Navigation App">
-    <meta property="twitter:description" content="Navigate confidently without GPS using SunQuest's innovative sun-based navigation. Perfect for hiking, outdoor adventures, and emergency situations.">
-    <meta property="twitter:image" content="https://sunquest.codehospital.com/assets/social-preview.webp">
-    
+    <meta property="twitter:title" content="SunQuest - Sun-Powered Navigation & Alignment Reminders">
+    <meta property="twitter:description" content="SunQuest calculates the exact moment the sun aligns with any target direction you choose, then reminds you with notifications and live home-screen widgets.">
+    <meta property="twitter:image" content="https://sunquest.codehospital.com/assets/Screenshot_20250225_183116.png">
+
     <!-- Favicon -->
     <link rel="canonical" href="https://sunquest.codehospital.com">
     <link rel="alternate" hreflang="x-default" href="https://sunquest.codehospital.com">
     <link rel="alternate" hreflang="en" href="https://sunquest.codehospital.com">
-    
+
     <!-- Mobile App Meta -->
-    <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
     <meta name="google-play-app" content="app-id=com.codehospital.tarzaha">
     <meta name="application-name" content="SunQuest">
     <meta name="apple-mobile-web-app-title" content="SunQuest">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>SunQuest - Navigate with the Sun</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/webp" href="assets/logo.webp">
     <link rel="apple-touch-icon" href="assets/logo.webp">
@@ -64,9 +62,11 @@
             <button class="menu-toggle" aria-label="Toggle navigation menu">☀️</button>
             <div class="nav-links">
                 <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
                 <a href="#download">Download</a>
                 <a href="#contact">Contact</a>
                 <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
             </div>
             <script>
                 document.querySelector('.menu-toggle').addEventListener('click', function() {
@@ -105,15 +105,15 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>Find Your Way Using the Sun</h1>
-                <p>Discover SunQuest - an innovative navigation app that helps you find your direction using the sun's position, no GPS required. Perfect for outdoor adventures, survival situations, or when you want to connect with ancient navigation techniques.</p>
+                <h1>Know Exactly When To Face The Sun</h1>
+                <p>SunQuest calculates the precise moment each day when the sun aligns with any target location you choose — a destination, a landmark, a loved one's city — then reminds you with notifications and a live home-screen countdown. No compass, no magnetometer, no continuous GPS tracking.</p>
                 <div class="cta-buttons">
                     <a href="#download" class="button primary">Download Now</a>
                     <a href="#features" class="button secondary">Learn More</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/Screenshot_20250225_183116.png" alt="SunQuest App Screenshot showing sun-based navigation" class="phone-mockup">
+                <img src="assets/Screenshot_20250225_183116.png" alt="SunQuest app screenshot showing current location, target location, and a live countdown to sun alignment" class="phone-mockup">
             </div>
         </section>
 
@@ -122,23 +122,44 @@
             <div class="feature-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🧭</div>
-                    <h3>GPS-Free Navigation</h3>
-                    <p>Navigate using just the sun's position - perfect when GPS isn't available.</p>
+                    <h3>Sun-Alignment Calculator</h3>
+                    <p>Finds the exact date and time the sun's position matches the bearing to your target — an ancient shadow-based navigation method, done automatically.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">☀️</div>
-                    <h3>Solar Position Tracking</h3>
-                    <p>Accurate direction finding based on solar position and time of day.</p>
+                    <div class="feature-icon">🔔</div>
+                    <h3>Smart Reminders</h3>
+                    <p>Get notified 60, 30, 10, 5, and 1 minute before alignment, plus a final alert right when it happens.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📲</div>
+                    <h3>Home Screen Widgets</h3>
+                    <p>Keep a live countdown to the next alignment right on your home screen — no need to open the app.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🌍</div>
-                    <h3>Works Anywhere</h3>
-                    <p>No internet or GPS signal needed - works anywhere under the sun.</p>
+                    <h3>Any Target, Anywhere</h3>
+                    <p>Set any target location on Earth — a destination, a landmark, or someone you care about — and know exactly when the sun points the way.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="features">
+            <h2>How It Works</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>1. Set Your Location</h3>
+                    <p>Use GPS to fill it in automatically, or enter your coordinates manually.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Simple Interface</h3>
-                    <p>Easy-to-use interface that guides you in finding your direction.</p>
+                    <div class="feature-icon">🎯</div>
+                    <h3>2. Choose a Target</h3>
+                    <p>Set any target location you like — SunQuest works between any two points on Earth.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☀️</div>
+                    <h3>3. Get Notified</h3>
+                    <p>SunQuest reminds you before the sun aligns, so you can step outside and check.</p>
                 </div>
             </div>
         </section>
@@ -147,16 +168,16 @@
             <h2>See SunQuest in Action</h2>
             <div class="screenshot-grid">
                 <div class="screenshot-item">
-                    <img src="assets/Screenshot_20250225_183116.png" alt="Main navigation screen showing compass and sun position" class="screenshot">
-                    <p>Intuitive Navigation Interface</p>
+                    <img src="assets/Screenshot_20250225_183116.png" alt="Home screen showing current location, target location, and a live countdown to the next sun alignment" class="screenshot">
+                    <p>Live Countdown To Alignment</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="assets/Screenshot_20250225_183139.png" alt="Detailed view of direction finding" class="screenshot">
-                    <p>Precise Direction Finding</p>
+                    <img src="assets/Screenshot_20250407_154150.png" alt="Home screen widget showing the next sun alignment time and a live countdown" class="screenshot">
+                    <p>Countdown On Your Home Screen</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="assets/Screenshot_20250225_183300.png" alt="Settings and calibration screen" class="screenshot">
-                    <p>Easy Calibration</p>
+                    <img src="assets/Screenshot_20250225_183300.png" alt="Setting a custom target location" class="screenshot">
+                    <p>Set Any Custom Target</p>
                 </div>
             </div>
         </section>
@@ -182,22 +203,16 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>SunQuest</h4>
-                <p>© 2025 CodeHospital. All rights reserved.</p>
+                <p>© 2025–2026 Code Hospital. All rights reserved.</p>
             </div>
             <div class="footer-section">
                 <h4>Links</h4>
                 <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
                 <a href="#download">Download</a>
                 <a href="#contact">Contact</a>
                 <a href="privacy.html">Privacy Policy</a>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#" target="_blank">Twitter</a>
-                    <a href="#" target="_blank">Instagram</a>
-                    <a href="#" target="_blank">LinkedIn</a>
-                </div>
+                <a href="terms.html">Terms of Service</a>
             </div>
         </div>
     </footer>

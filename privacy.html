@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
     <!-- Primary Meta Tags -->
-    <title>Privacy Policy | SunQuest - GPS-Free Navigation App</title>
-    <meta name="title" content="Privacy Policy | SunQuest - GPS-Free Navigation App">
-    <meta name="description" content="Learn about SunQuest's commitment to your privacy. Our GPS-free navigation app respects your data and ensures secure, transparent handling of your information.">
-    <meta name="keywords" content="SunQuest privacy policy, data protection, app privacy, navigation app security, user data privacy">
-    <meta name="author" content="CodeHospital">
+    <title>Privacy Policy | SunQuest - Sun-Powered Navigation & Alignment Reminders</title>
+    <meta name="title" content="Privacy Policy | SunQuest - Sun-Powered Navigation & Alignment Reminders">
+    <meta name="description" content="Learn what data SunQuest collects, how it's used, and how to control it — including location, device information, crash diagnostics, and advertising.">
+    <meta name="keywords" content="SunQuest privacy policy, data protection, app privacy, sun navigation app privacy, user data privacy">
+    <meta name="author" content="Code Hospital">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sunquest.codehospital.com/privacy.html">
-    <meta property="og:title" content="Privacy Policy | SunQuest - GPS-Free Navigation App">
-    <meta property="og:description" content="Learn about SunQuest's commitment to your privacy. Our GPS-free navigation app respects your data and ensures secure, transparent handling of your information.">
-    
+    <meta property="og:title" content="Privacy Policy | SunQuest - Sun-Powered Navigation & Alignment Reminders">
+    <meta property="og:description" content="Learn what data SunQuest collects, how it's used, and how to control it — including location, device information, crash diagnostics, and advertising.">
+
+    <link rel="canonical" href="https://sunquest.codehospital.com/privacy.html">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/webp" href="assets/logo.webp">
+    <link rel="apple-touch-icon" href="assets/logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -31,35 +42,54 @@
                     <span>SunQuest</span>
                 </a>
             </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">☀️</button>
             <div class="nav-links">
                 <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
                 <a href="index.html#download">Download</a>
                 <a href="index.html#contact">Contact</a>
                 <a href="privacy.html" class="active">Privacy</a>
+                <a href="terms.html">Terms</a>
             </div>
+            <script>
+                document.querySelector('.menu-toggle').addEventListener('click', function() {
+                    document.querySelector('.nav-links').classList.toggle('show');
+                });
+
+                document.addEventListener('click', function(e) {
+                    if (!e.target.closest('nav')) {
+                        document.querySelector('.nav-links').classList.remove('show');
+                    }
+                });
+            </script>
         </nav>
     </header>
 
     <main class="privacy-content">
         <section class="privacy-section">
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last Updated: February 25, 2025</p>
+            <p class="last-updated">Last Updated: July 18, 2026</p>
 
             <div class="policy-content">
                 <section>
+                    <h2>About This Policy</h2>
+                    <p>This Privacy Policy applies to the Android app published on Google Play as <strong>A Solar Compass</strong> (package name <code>com.codehospital.tarzaha</code>), developed by <strong>Code Hospital</strong>. The app is also referred to as <strong>SunQuest</strong> on this website and in some app builds — both names refer to the same app and developer.</p>
+                </section>
+
+                <section>
                     <h2>Introduction</h2>
-                    <p>Welcome to SunQuest's Privacy Policy. SunQuest is a software solution designed to help you determine direction when your device's magnetometer (compass) is not working properly. We are committed to protecting your privacy and ensuring that your data is handled securely and transparently.</p>
+                    <p>Welcome to A Solar Compass's (SunQuest's) Privacy Policy. The app calculates the moment the sun aligns with a target direction you choose — a destination, a landmark, or anywhere else — and reminds you before it happens. This policy explains what information the app collects, how it's used, and the choices you have.</p>
                 </section>
 
                 <section>
                     <h2>Information We Collect</h2>
-                    <p>SunQuest collects the following data to provide and improve our service:</p>
+                    <p>SunQuest does not read your device's compass/magnetometer and does not track your location continuously in the background. It collects:</p>
                     <ul>
-                        <li>Device orientation data (for basic direction sensing)</li>
-                        <li>Time and date information (for accurate sun position calculations)</li>
-                        <li>Device location (only when actively using the app)</li>
-                        <li>Device information (model and brand)</li>
-                        <li>Device settings (for optimal app performance)</li>
+                        <li>Location coordinates — your current location (entered manually or fetched once via GPS when you tap "Use GPS") and any target location you set</li>
+                        <li>Approximate location, city, and country derived from your IP address, used as a starting point if you don't set your location yourself</li>
+                        <li>Device information (model, brand, hardware, and OS/app version), sent to our server with requests for compatibility and support purposes</li>
+                        <li>Crash and performance diagnostics, processed by Sentry and Google Firebase Crashlytics, which may include device details and a screenshot of the screen at the time of a crash</li>
+                        <li>Text you submit through in-app feedback or "Report Wrong Calculation" forms</li>
                     </ul>
                 </section>
 
@@ -67,32 +97,37 @@
                     <h2>How We Use Your Information</h2>
                     <p>The information we collect is used for:</p>
                     <ul>
-                        <li>Calculating the sun's position to determine direction</li>
-                        <li>Providing alternative direction finding when magnetometer is unavailable</li>
-                        <li>Determining your current orientation</li>
-                        <li>Improving app performance and accuracy</li>
-                        <li>Analyzing device compatibility and performance</li>
+                        <li>Calculating the sun's alignment with your chosen target direction</li>
+                        <li>Sending reminder notifications and updating home-screen widgets with the countdown</li>
+                        <li>Looking up a starting location and timezone for you when needed</li>
+                        <li>Diagnosing crashes and improving app stability and device compatibility</li>
+                        <li>Reviewing feedback and calculation reports you choose to submit</li>
                     </ul>
                 </section>
 
                 <section>
+                    <h2>Advertising</h2>
+                    <p>SunQuest displays ads through Google AdMob. AdMob may collect and use identifiers and other data to serve ads, as described in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. You can review or reset your advertising identifier and ad personalization settings in your device's system settings.</p>
+                </section>
+
+                <section>
                     <h2>Data Collection Preferences</h2>
-                    <p>You have control over your data collection preferences:</p>
+                    <p>You have some control over your data collection preferences:</p>
                     <ul>
-                        <li>You will be asked about data collection when you first launch the app</li>
-                        <li>You can change your preference at any time through the About box (menu → About)</li>
-                        <li>Your choice is stored locally on your device</li>
-                        <li>You can enable or disable data collection at any time</li>
+                        <li>You'll be asked about data collection the first time you launch the app</li>
+                        <li>You can change this preference at any time from the Settings icon (gear icon) in the app's top bar</li>
+                        <li>This preference controls whether device details are included when the app looks up a starting location for you via your IP address</li>
+                        <li>Location coordinates you set yourself and basic device information are still used to operate core features (alignment calculations, reminders, and crash diagnostics) regardless of this preference</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Data Storage and Security</h2>
-                    <p>SunQuest stores and processes data on our secure servers. We implement appropriate security measures to protect your information. We do not:</p>
+                    <p>SunQuest stores and processes data on our servers and through the third-party services listed above (Sentry, Firebase Crashlytics, Google AdMob). We implement reasonable security measures to protect your information. We do not:</p>
                     <ul>
-                        <li>Share your personal information with third parties without your consent</li>
-                        <li>Use your data for advertising purposes</li>
-                        <li>Store your location history beyond what is necessary for the service</li>
+                        <li>Sell your personal information</li>
+                        <li>Share your personal information with third parties beyond the service providers described in this policy</li>
+                        <li>Store your location history beyond what is necessary to provide the service</li>
                     </ul>
                 </section>
 
@@ -100,16 +135,16 @@
                     <h2>Your Rights</h2>
                     <p>You have the following rights regarding your data:</p>
                     <ul>
-                        <li>Access your stored data</li>
+                        <li>Request access to your stored data</li>
                         <li>Request deletion of your data</li>
-                        <li>Opt-out of data collection at any time</li>
+                        <li>Adjust the data collection preference described above at any time</li>
                         <li>Request information about how your data is being used</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Contact Us</h2>
-                    <p>If you have any questions about this Privacy Policy, you can contact us:</p>
+                    <p>If you have any questions about this Privacy Policy, you can contact Code Hospital, the developer of A Solar Compass (SunQuest):</p>
                     <ul>
                         <li>By email: <a href="mailto:sunquest@codehospital.com">sunquest@codehospital.com</a></li>
                         <li>By visiting our website: <a href="https://sunquest.codehospital.com">sunquest.codehospital.com</a></li>
@@ -123,7 +158,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>SunQuest</h4>
-                <p>© 2025 CodeHospital. All rights reserved.</p>
+                <p>© 2025–2026 Code Hospital. All rights reserved.</p>
             </div>
             <div class="footer-section">
                 <h4>Links</h4>
@@ -131,14 +166,7 @@
                 <a href="index.html#download">Download</a>
                 <a href="index.html#contact">Contact</a>
                 <a href="privacy.html">Privacy Policy</a>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#" target="_blank">Twitter</a>
-                    <a href="#" target="_blank">Instagram</a>
-                    <a href="#" target="_blank">LinkedIn</a>
-                </div>
+                <a href="terms.html">Terms of Service</a>
             </div>
         </div>
     </footer>
