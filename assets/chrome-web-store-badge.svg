@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="172" height="40" viewBox="0 0 172 40" role="img" aria-label="Available in the Chrome Web Store">
+  <title>Available in the Chrome Web Store</title>
+  <rect x="0.5" y="0.5" width="171" height="39" rx="6.5" fill="#000000" stroke="#a6a6a6"/>
+  <g transform="translate(22 20) scale(0.11)">
+    <path d="M0,0 L-100,0 A100,100 0 0,1 50,-86.60254 Z" fill="#EA4335"/>
+    <path d="M0,0 L50,-86.60254 A100,100 0 0,1 50,86.60254 Z" fill="#34A853"/>
+    <path d="M0,0 L50,86.60254 A100,100 0 0,1 -100,0 Z" fill="#FBBC05"/>
+    <g stroke="#ffffff" stroke-width="10" stroke-linecap="round">
+      <line x1="0" y1="0" x2="-100" y2="0"/>
+      <line x1="0" y1="0" x2="50" y2="-86.60254"/>
+      <line x1="0" y1="0" x2="50" y2="86.60254"/>
+    </g>
+    <circle cx="0" cy="0" r="56" fill="#ffffff"/>
+    <circle cx="0" cy="0" r="46" fill="#4285F4"/>
+  </g>
+  <!-- textLength pins the layout so the badge renders identically without the Inter webfont -->
+  <g fill="#ffffff" font-family="Inter, -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <text x="40" y="16" font-size="8.5" textLength="62" lengthAdjust="spacingAndGlyphs">Available in the</text>
+    <text x="40" y="31" font-size="14.5" font-weight="600" textLength="122" lengthAdjust="spacingAndGlyphs">Chrome Web Store</text>
+  </g>
+</svg>
